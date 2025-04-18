@@ -15,12 +15,13 @@ block content
         else  
           form(name="login", method="POST", action="login") 
               .mb-3
-                label.form-label(for='exampleInputEmail1') Email address
-                input.form-control(type='email', id='exampleInputEmail1', aria-describedby='emailHelp', placeholder='youremail@email.com')
+                label.form-label(for='email1') Email address
+                input.form-control(type='email', id='email1', name='email', aria-describedby='emailHelp', placeholder='youremail@email.com')
               .mb-3
-                label.form-label(for='exampleInputPassword1') Password
-                input.form-control(type='password', id='exampleInputPassword1', placeholder='password')
+                label.form-label(for='password') Password
+                input.form-control(type='password', id='password', name='password' placeholder='password')
               .mb-3.form-check
                 input.form-check-input(type='checkbox', id='exampleCheck1')
                 label.form-check-label(for='exampleCheck1') Check me out
               button.btn.btn-primary(type='submit') Submit 
+  
