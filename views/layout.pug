@@ -7,7 +7,26 @@ html(lang="en")
     link(rel="stylesheet", href="/stylesheets/bootstrap.min.css", crossorigin="anonymous")
   body
     .container 
-      .row 
+      .row
+        nav.navbar.navbar-expand-lg.bg-body-tertiary
+          .container-fluid
+            a.navbar-brand(href='#') Navbar
+            button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+              span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+              ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                li.nav-item
+                  a.nav-link.active(aria-current='page' href='#') Home
+                li.nav-item
+                  a.nav-link(href='#') About
+                li
+                  a.nav-link(href='#') Price 
+                li.nav-item 
+                  a.nav-link(href='#') Link 
+                li.nav-item 
+                  a.nav-link(href='#') Link 
+
+
         block content
     footer 
       block footer
