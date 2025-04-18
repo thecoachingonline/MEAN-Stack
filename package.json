@@ -1,4 +1,6 @@
 {
+  "name": "MEAN-Stack",
+  "version": "1.0.0",
   "dependencies": {
     "express": "^5.1.0"
   }
