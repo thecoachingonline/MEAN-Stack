@@ -27,6 +27,12 @@ app.use(bodyParser.json());
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+express.loging = function(req, res) {
+  console.log(req.body);
+  console.log('email: ' + req.body.email);
+  console.log('password: ' + req.body.password);
+};
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

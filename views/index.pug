@@ -11,12 +11,12 @@ block content
           p.h3 You are logged in.
             form(name="logout", method="POST", action="logout")
           div
-            input(type="submit", value="logout")
+            input(type="submit", value="Logout")
         else  
-          form(name="login", method="POST", action="login") 
+          form(name="login", method="POST", action="users") 
               .mb-3
-                label.form-label(for='email1') Email address
-                input.form-control(type='email', id='email1', name='email', aria-describedby='emailHelp', placeholder='youremail@email.com')
+                label.form-label(for='email') Email address
+                input.form-control(type='email', id='email', name='email', aria-describedby='emailHelp', placeholder='youremail@email.com')
               .mb-3
                 label.form-label(for='password') Password
                 input.form-control(type='password', id='password', name='password' placeholder='password')
