@@ -2,7 +2,13 @@ extends layout
 
 block content
   .row 
-    p Welcome to #{title}
+    nav.navber.navber-expand-lg.bg-body-tertiary 
+      .container-fluid 
+        a.navbar-brand(href="#") Navbar 
+          button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+
+
+    h1 Welcome to #{title}
       img(src="/images/Y.Nanthachai.png", alt="Logo")
     h2 Hello Login
       if isLoggedIn
