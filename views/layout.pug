@@ -6,9 +6,17 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="/stylesheets/bootstrap.min.css", crossorigin="anonymous")
   body
-    block content
-  footer 
-    block footer
-      p Copyright Y.Nanthachai All rights reserved.
+    .container 
+      .row 
+        nav.navber.navber-expand-lg.bg-body-tertiary 
+        .container-fluid 
+          a.navbar-brand(href="#") Navbar 
+          button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+
+          
+            block content
+    footer 
+      block footer
+        p Copyright Y.Nanthachai All rights reserved.
       
-      script(src="/javascripts/bootstrap.bundle.min.js", crossorigin="anonymous") 
+        script(src="/javascripts/bootstrap.bundle.min.js", crossorigin="anonymous") 

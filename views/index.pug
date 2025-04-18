@@ -1,10 +1,8 @@
 extends layout
 
 block content
-  .container 
-    
-    h1= title
-      p Welcome to #{title}
+  .row 
+    p Welcome to #{title}
       img(src="/images/Y.Nanthachai.png", alt="Logo")
     h2 Hello Login
       if isLoggedIn
