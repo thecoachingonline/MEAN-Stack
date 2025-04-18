@@ -1,13 +1,14 @@
 doctype html
-html
+html(lang="en")
   head
+    meta(charset="UTF-8")
     title= title
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="/stylesheets/bootstrap.min.css", crossorigin="anonymous")
   body
     block content
   footer 
     block footer
       p Copyright Y.Nanthachai All rights reserved.
-  script 
-    block script
+      
       script(src="/javascripts/bootstrap.bundle.min.js", crossorigin="anonymous") 
