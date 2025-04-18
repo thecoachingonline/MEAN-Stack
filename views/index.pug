@@ -2,22 +2,25 @@ extends layout
 
 block content
   .row 
-    h1 Welcome to #{title}
-      img(src='/images/Y.Nanthachai.png', class='img-fluid' alt='ogo')
-    h2 Hello Login
-      if isLoggedIn
-        h3 You are logged in.
-          form(name="logout", method="POST", action="logout")
-        div
-          input(type="submit", value="logout")
-      else 
-        form(name="login", method="POST", action="login") 
-          div 
-            label(for="email") Email
-            input(name="email", type="email", placeholder="youremail@email.com")
-          div 
-            label(for="password")  Password 
-            input(name="password", type="password", placeholder="password")
+    .col 
+      p
+        img(src='/images/Y.Nanthachai.png', class='img-fluid' alt='ogo')
+      h1 Welcome to #{title}
+      h2 Please Login.
+        if isLoggedIn
+          h3 You are logged in.
+            form(name="logout", method="POST", action="logout")
           div
-            input(type="submit", value="login")
-    h2= message
+            input(type="submit", value="logout")
+        else 
+          form(name="login", method="POST", action="login") 
+            div 
+              label(for="email") Email
+              input(name="email", type="email", placeholder="youremail@email.com")
+            div 
+              label(for="password")  Password 
+              input(name="password", type="password", placeholder="password")
+            div
+              input(type="submit", value="login")
+
+      h2= message
