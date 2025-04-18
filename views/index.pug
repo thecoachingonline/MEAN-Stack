@@ -4,4 +4,15 @@ block content
   h1= title
   p Welcome to #{title}
   img(src="/images/Y.Nanthachai.png", alt="Logo")
+  h2 Hello Login
+  if isLoggedIn
+    h3 You are logged in.
+    form(name="logout", method="POST", action="logout")
+      div
+        input(type="submit", value="logout")
+  else 
+    form(name="login", method="POST", action="login") 
+      div 
+      label(for="email") Email
+      input(name="email", type="email")
   h2= message
