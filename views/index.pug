@@ -5,22 +5,22 @@ block content
     .col 
       p
         img(src='/images/Y.Nanthachai.png', class='img-fluid' alt='ogo')
-      h1 Welcome to #{title}
+      h1 Welcome to #{title} 👋 #{message}
       h2 Please Login.
         if isLoggedIn
           h3 You are logged in.
             form(name="logout", method="POST", action="logout")
           div
             input(type="submit", value="logout")
-        else 
+        else  
           form(name="login", method="POST", action="login") 
-            div 
-              label(for="email") Email
-              input(name="email", type="email", placeholder="youremail@email.com")
-            div 
-              label(for="password")  Password 
-              input(name="password", type="password", placeholder="password")
-            div
-              input(type="submit", value="login")
-
-      h2= message
+              .mb-3
+                label.form-label(for='exampleInputEmail1') Email address
+                input.form-control(type='email', id='exampleInputEmail1', aria-describedby='emailHelp', placeholder='youremail@email.com')
+              .mb-3
+                label.form-label(for='exampleInputPassword1') Password
+                input.form-control(type='password', id='exampleInputPassword1', placeholder='password')
+              .mb-3.form-check
+                input.form-check-input(type='checkbox', id='exampleCheck1')
+                label.form-check-label(for='exampleCheck1') Check me out
+              button.btn.btn-primary(type='submit') Submit 
