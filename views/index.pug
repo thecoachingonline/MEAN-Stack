@@ -3,12 +3,12 @@ extends layout
 block content
   .row 
     .col 
-      p
-        img(src='/images/Y.Nanthachai.png', class='img-fluid' alt='ogo')
-      h1 Welcome to #{title} 👋 #{message}
-      h2 Please Login.
+      .card
+        img.card-img-bottom(src='/images/Y.Nanthachai.png', class='img-fluid' alt='ogo')
+      p.h1 Welcome to #{title} 👋 #{message}
+      p.h2 Please Login.
         if isLoggedIn
-          h3 You are logged in.
+          p.h3 You are logged in.
             form(name="logout", method="POST", action="logout")
           div
             input(type="submit", value="logout")
