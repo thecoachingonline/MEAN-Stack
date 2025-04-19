@@ -1,0 +1,27 @@
+{
+  "name": "mean-stack",
+  "description": "Angular",
+  "main": "",
+  "authors": [
+    "Y.NANTHACHAI <nooudon@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "M",
+    "E",
+    "A",
+    "N"
+  ],
+  "homepage": "https://github.com/thecoachingonline/MEAN-Stack",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.8.3"
+  }
+}
