@@ -1,0 +1,23 @@
+version: "3"
+services:
+  mongo:
+    image: mongo
+    container_name: mongo_db
+    ports:
+      - "27017:27017"
+  backend:
+    build: .
+    container_name: mean_backend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+  frontend:
+    image: node:18
+    container_name: mean_frontend
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: npm start
+    ports:
+      - "4200:4200"
